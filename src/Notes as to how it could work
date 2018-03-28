@@ -1,15 +1,19 @@
 
-1. Lock is initialized when it hits the endpoint for the first time. Creates lock_id and stores it internally.
-1. To update the phone and email, user can go to website with lock_id in url (ex. www.tracelock.com/23412341623784asdfre) where a form will be
-3. When lock is unlocked, it sends another request to the endpoint, updating its location
-4. When lock is broken, hits endpoint, which will alert the user and start showing the devices gps coords, and path that it has taken on website
-5. When lock is running low on battery, will hit endpoint to alert user
 
+I know nothing about hardware, so each device would have its own serial code right?
+Assuming it does:
+1. Log onto website, create account, specify phone/email, and register device in your account.
+2. Lock is then added to database and email/phone number is stored.
+3. When lock is unlocked, it sends request to endpoint, updating its location. (we can use this data to accumulate data on bike locations/paths)
+4. When lock is broken, hits endpoint, which will alert the user and start showing the devices gps coords and path that it has taken on website
+5. When lock is running low on battery, will hit endpoint to alert user
 
 Optionally, could include weather data and time when lock is broken which would allow us to do basic analytics on when
 locks are more likely to be broken into.
 
-
 TODO: Create way to notify user (twilio?)
 TODO: Finish API
+TODO: Build website around API (need login page and personal page)
+TODO: Create user database
+TODO: Create user class
 TODO: Secure requests
