@@ -8,7 +8,7 @@ Assuming it does:
 4. When lock is broken, hits endpoint, which will alert the user and start showing the devices gps coords and path that it has taken on website
 5. When lock is running low on battery, will hit endpoint to alert user
 
-Optionally, could include weather data and time when lock is broken which would allow us to do basic analytics on when
+Optionally, could include weather data and time when lock is broken which would allow us to do basic analytics on when and where
 locks are more likely to be broken into.
 
 TODO: Create way to notify user (twilio?)
